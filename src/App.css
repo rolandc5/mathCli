@@ -26,3 +26,166 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding-top: 5em;
+}
+
+.gameContainer {
+  text-align: center;
+}
+
+.questionContainer {
+  text-align: center;
+}
+
+.questionStyle {
+  font-size: 15em;
+}
+
+.answerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.answerRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.answerStyle {
+  width: 5em;
+  font-size: 3em;
+  border: none;
+  margin: 0.1em;
+  animation: popin 1s;
+}
+
+.answerStyle:action {
+  animation: popin 1s;
+}
+
+@keyframes popin {
+  from { font-size: 0em }
+  to { font-size: 3em }
+}
+
+.colorWrong {
+  background-color: red;
+}
+
+.colorRight {
+
+}
+
+.timerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.timerSize {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.timer {
+  border: solid 5px;
+  animation: timer 3s;
+}
+
+
+@keyframes timer {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+/*mobile
+*/
+
+@media only screen and (max-width: 720px) {
+  
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding-top: 2.5em;
+}
+
+.gameContainer {
+  text-align: center;
+}
+
+.questionContainer {
+  text-align: center;
+}
+
+.questionStyle {
+  font-size: 9em;
+}
+
+.answerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.answerRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.answerStyle {
+  width: 5em;
+  font-size: 3.5em;
+  border: none;
+  margin: 0.1em;
+  animation: popin 1s;
+}
+
+.answerStyle:action {
+  animation: popin 1s;
+}
+
+@keyframes popin {
+  from { font-size: 0em }
+  to { font-size: 3em }
+}
+
+.colorWrong {
+  background-color: red;
+}
+
+.colorRight {
+
+}
+
+.timerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.timerSize {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.timer {
+  border: solid 5px;
+  animation: timer 3s;
+}
+
+
+@keyframes timer {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+}
