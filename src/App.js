@@ -76,7 +76,7 @@ class App extends Component {
 						<div className='questionContainer'>
 							<span className='questionStyle'>{ `${this.state.left} + ${this.state.right}` }</span>
 						</div>
-						<div style={{ height: '3em' }}/>
+						<div style={{ height: '1em' }}/>
 						<div style={{ fontSize: '2em'}}><span style={{ color: 'green' }}>{ this.state.correct }</span> - <span style={{ color: 'red' }}>{ this.state.wrong }</span></div>
 						<div style={{ height: '3em' }}/>
 						<div className='answerContainer'>

@@ -1,42 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 .container {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #e8f1f2;
 }
 
 .wrapper {
-  padding-top: 5em;
+  display: table;
+  height: 100%;
 }
 
 .gameContainer {
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -46,6 +24,7 @@
 
 .questionStyle {
   font-size: 15em;
+  text-align: center;
 }
 
 .answerContainer {
@@ -64,10 +43,13 @@
   border: none;
   margin: 0.1em;
   animation: popin 1s;
+  background-color: #8d99ae;
+  transition: .5s;
 }
 
-.answerStyle:action {
-  animation: popin 1s;
+.answerStyle:hover {
+  background-color: #a1abbc;
+  transition: .5s
 }
 
 @keyframes popin {
