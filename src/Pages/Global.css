@@ -1,0 +1,218 @@
+.m-container {
+    padding: 0;
+    margin: 0;
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+.m-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.m-menuContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15em;
+}
+
+.m-titleContainer {
+    text-align: center;
+}
+
+.m-title {
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.m-ul-listDecoration {
+    position: absolute;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.m-buttonStyle {
+    font-size: 34px;
+    border: none;
+    background-color: inherit;
+    margin: .25em;
+    padding: 0;
+    transition: .5s ease;
+}
+
+.m-buttonStyle:hover {
+    font-size: 38px;
+    transition: .5s ease;
+}
+
+.m-li-listDecoration {
+    text-align: center;
+
+}
+
+/*
+SinglePlayer
+*/
+
+.s-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #e8f1f2;
+}
+
+.s-wrapper {
+    display: table;
+    height: 100%;
+}
+
+.s-loading {
+    font-size: 100px;
+}
+
+.s-loadingBar {
+    border: solid 2px;
+    height: 1em;
+    margin: .5em;
+}
+
+.s-innerLoadingBar {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    animation-name: loadingAnimation;
+    animation-duration: 1s;
+}
+
+@keyframes loadingAnimation {
+    from { width: 100% }
+    to { width: 0% }
+}
+
+.s-gameContainer {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.s-questionContainer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.s-questionStyle {
+    font-size: 200px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.s-scoreContainer {
+    font-size: 40px;
+}
+
+.s-scoreCorrect {
+    color: green;
+}
+
+.s-scoreWrong {
+
+    color: red;
+}
+
+.s-timerBarContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.s-timerBar {
+    height: 1em;
+    width: 98%;
+}
+
+.s-innerTimerBar {
+    border: none;
+    height: 1em;
+    width: 100%;
+    background-color: black;
+    animation-name: timer;
+    animation-duration: 1.5s;
+    animation-iteration-count: 11;
+}
+
+
+@keyframes timer {
+    from { width: 100% }
+    to { width: 0% }
+}
+
+.s-answerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.s-answerRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.s-answerStyle {
+    width: 5em;
+    font-size: 3em;
+    border: none;
+    margin: 0.1em;
+    animation: popin 1s;
+    background-color: #8d99ae;
+    transition: .5s;
+}
+
+.s-answerStyle:hover {
+    background-color: #a1abbc;
+    transition: .5s
+}
+
+@keyframes popin {
+    from { font-size: 0em }
+    to { font-size: 3em }
+}
+
+.s-colorWrong {
+    background-color: red;
+}
+
+.s-colorRight {
+
+}
+
+.s-timerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.s-timerSize {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.s-timer {
+    border: solid 5px;
+    animation: timer 3s;
+}
+
+
+@keyframes timer {
+    from { width: 100%; }
+    to { width: 0%; }
+}
